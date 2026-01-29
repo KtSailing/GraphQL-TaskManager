@@ -89,6 +89,8 @@ const TaskType = new GraphQLObjectType({
     due_date: { type: GraphQLString },
     location: { type: GraphQLString },
     status: { type: GraphQLString },
+    createdAt: { type: GraphQLString },
+    updatedAt: { type: GraphQLString },
     // Tagsのリレーション解決
     tags: {
       type: new GraphQLList(TagType),
